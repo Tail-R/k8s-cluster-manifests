@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: bullet-hell-server-headless
+  namespace: game-server-dev
+spec:
+  clusterIP: None
+  selector:
+    app: bullet-hell-server
+  ports:
+    - name: game-port
+      port: 22222
+      targetPort: 22222
