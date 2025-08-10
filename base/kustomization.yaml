@@ -1,0 +1,8 @@
+resources:
+  - namespace/namespace.yaml
+  - serviceaccount/sa.yaml
+  - rbac/role.yaml
+  - rbac/rolebinding.yaml
+  # - configmap/envoy_config.yaml
+  # - deployment/metal_lb_controller.yaml
+  # - service/load_balancer.yaml

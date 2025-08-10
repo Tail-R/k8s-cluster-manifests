@@ -1,0 +1,12 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: game-server-dev-rolebinding
+  namespace: game-server-dev
+subjects:
+- kind: ServiceAccount
+  name: game-server-dev-sa
+  namespace: game-server-dev
+roleRef:
+  kind: Role
+  name: game-server-dev-role
