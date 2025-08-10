@@ -3,6 +3,6 @@ resources:
   - serviceaccount/sa.yaml
   - rbac/role.yaml
   - rbac/rolebinding.yaml
-  # - configmap/envoy_config.yaml
+  - configmap/envoy.yaml
   # - deployment/metal_lb_controller.yaml
   # - service/load_balancer.yaml
