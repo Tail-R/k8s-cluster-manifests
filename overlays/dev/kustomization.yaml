@@ -1,0 +1,10 @@
+resources:
+  - ../../base/namespace
+  - ../../base/serviceaccount
+  - ../../base/rbac
+  - ../../base/configmap
+  - ../../base/deployment
+  - ../../base/daemonset
+  - ../../apps/bullet-hell-server
+  - ../../apps/envoy
+  # - service/load_balancer.yaml
