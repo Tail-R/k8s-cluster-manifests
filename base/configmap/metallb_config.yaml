@@ -1,33 +1,12 @@
-apiVersion: apps/v1
-kind: DaemonSet
+apiVersion: v1
+kind: ConfigMap
 metadata:
   namespace: metallb-system
-  name: metallb-speaker
-spec:
-  selector:
-    matchLabels:
-      app: metallb
-      component: speaker
-  template:
-    metadata:
-      labels:
-        app: metallb
-        component: speaker
-    spec:
-      serviceAccountName: metallb-speaker
-      containers:
-        - name: speaker
-          image: metallb/speaker:v0.13.10
-          args:
-            - --port=7472
-            - --config=/etc/metallb/config/config
-          securityContext:
-            privileged: true
-          volumeMounts:
-            - name: config
-              mountPath: /etc/metallb/config
-              readOnly: true
-      volumes:
-        - name: config
-          configMap:
-            name: metallb-config
+  name: config
+data:
+  config: |
+    address-pools:
+    - name: default
+      protocol: layer2
+      addresses:
+      - 192.168.100.2-192.168.100.9
