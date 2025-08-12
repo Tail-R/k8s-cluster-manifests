@@ -7,4 +7,4 @@ resources:
   - ../../base/daemonset
   - ../../apps/bullet-hell-server
   - ../../apps/envoy
-  # - service/load_balancer.yaml
+  - ../../base/service

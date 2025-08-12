@@ -1,0 +1,2 @@
+resources:
+  - envoy-loadbalancer.yaml
