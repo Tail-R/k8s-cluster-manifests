@@ -3,8 +3,8 @@ resources:
   - ../../base/serviceaccount
   - ../../base/rbac
   - ../../base/configmap
-  - ../../base/deployment
-  - ../../base/daemonset
+  # - ../../base/deployment
+  # - ../../base/daemonset
   - ../../apps/bullet-hell-server
   - ../../apps/envoy
   - ../../base/service
