@@ -10,7 +10,7 @@ data:
         - name: game_traffic_listener_0
           address:
             socket_address:
-              address: 127.0.0.1
+              address: 0.0.0.0
               port_value: 22222
           filter_chains:
             - filters:
@@ -32,15 +32,15 @@ data:
                   - endpoint:
                       address:
                         socket_address:
-                          address: bullet-hell-server-0.bullet-hell-server-headless.default.svc.cluster.local
+                          address: bullet-hell-server-0.bullet-hell-server-headless.game-server-dev.svc.cluster.local
                           port_value: 22222
                   - endpoint:
                       address:
                         socket_address:
-                          address: bullet-hell-server-1.bullet-hell-server-headless.default.svc.cluster.local
+                          address: bullet-hell-server-1.bullet-hell-server-headless.game-server-dev.svc.cluster.local
                           port_value: 22222
                   - endpoint:
                       address:
                         socket_address:
-                          address: bullet-hell-server-2.bullet-hell-server-headless.default.svc.cluster.local
+                          address: bullet-hell-server-2.bullet-hell-server-headless.game-server-dev.svc.cluster.local
                           port_value: 22222

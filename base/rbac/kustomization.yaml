@@ -1,5 +1,3 @@
 resources:
   - game-server-dev-role.yaml
   - game-server-dev-rb.yaml
-  - metallb-system-role.yaml
-  - metallb-system-rb.yaml

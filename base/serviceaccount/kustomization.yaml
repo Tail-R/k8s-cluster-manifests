@@ -1,3 +1,2 @@
 resources:
   - game-server-dev-sa.yaml
-  - metallb-system-sa.yaml

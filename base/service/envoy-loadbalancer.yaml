@@ -6,6 +6,7 @@ metadata:
 spec:
   type: LoadBalancer
   loadBalancerIP: 192.168.100.9
+  externalTrafficPolicy: Local
   selector:
     app: envoy
   ports:
