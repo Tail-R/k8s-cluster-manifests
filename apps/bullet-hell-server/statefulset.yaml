@@ -30,11 +30,3 @@ spec:
               port: 22222
             initialDelaySeconds: 15
             periodSeconds: 20
-  volumeClaimTemplates:
-    - metadata:
-        name: data
-      spec:
-        accessModes: ["ReadWriteOnce"]
-        resources:
-          requests:
-            storage: 1Gi
