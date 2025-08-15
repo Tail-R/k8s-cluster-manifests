@@ -1,0 +1,7 @@
+  - namespace
+  - serviceaccount
+  - rbac
+  # - configmap
+  # - deployment
+  # - service
+  - metallb
