@@ -2,9 +2,9 @@ resources:
   - ../../base/namespace
   - ../../base/serviceaccount
   - ../../base/rbac
-  - ../../base/configmap
+  # - ../../base/configmap
   # - ../../base/deployment
-  # - ../../base/daemonset
+  # - ../../base/service
+  - ../../base/metallb
   - ../../apps/bullet-hell-server
   - ../../apps/envoy
-  - ../../base/service
