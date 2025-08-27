@@ -30,3 +30,10 @@ spec:
               port: 22222
             initialDelaySeconds: 15
             periodSeconds: 20
+          volumeMounts:
+            - name: cephfs-volume
+              mountPath: /mnt/data
+      volumes:
+        - name: cephfs-volume
+          persistentVolumeClaim:
+            claimName: cephfs-pvc      
