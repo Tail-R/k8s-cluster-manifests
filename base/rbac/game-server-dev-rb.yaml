@@ -10,3 +10,4 @@ subjects:
 roleRef:
   kind: Role
   name: game-server-dev-role
+  apiGroup: rbac.authorization.k8s.io

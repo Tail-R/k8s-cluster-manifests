@@ -22,6 +22,13 @@ spec:
           ports:
             - containerPort: 22222
               name: envoy-port
+          resources:
+            requests:
+              cpu: "100m"
+              memory: "128Mi"
+            limits:
+              cpu: "500m"
+              memory: "256Mi"
           volumeMounts:
             - name: envoy-config
               mountPath: /etc/envoy
