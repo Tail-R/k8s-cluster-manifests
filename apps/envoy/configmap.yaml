@@ -44,3 +44,38 @@ data:
                         socket_address:
                           address: bullet-hell-server-2.bullet-hell-server-headless.game-server-dev.svc.cluster.local
                           port_value: 22222
+                  - endpoint:
+                      address:
+                        socket_address:
+                          address: bullet-hell-server-3.bullet-hell-server-headless.game-server-dev.svc.cluster.local
+                          port_value: 22222                  
+                  - endpoint:
+                      address:
+                        socket_address:
+                          address: bullet-hell-server-4.bullet-hell-server-headless.game-server-dev.svc.cluster.local
+                          port_value: 22222
+                  - endpoint:
+                      address:
+                        socket_address:
+                          address: bullet-hell-server-5.bullet-hell-server-headless.game-server-dev.svc.cluster.local
+                          port_value: 22222
+                  - endpoint:
+                      address:
+                        socket_address:
+                          address: bullet-hell-server-6.bullet-hell-server-headless.game-server-dev.svc.cluster.local
+                          port_value: 22222
+                  - endpoint:
+                      address:
+                        socket_address:
+                          address: bullet-hell-server-7.bullet-hell-server-headless.game-server-dev.svc.cluster.local
+                          port_value: 22222
+                  - endpoint:
+                      address:
+                        socket_address:
+                          address: bullet-hell-server-8.bullet-hell-server-headless.game-server-dev.svc.cluster.local
+                          port_value: 22222
+                  - endpoint:
+                      address:
+                        socket_address:
+                          address: bullet-hell-server-9.bullet-hell-server-headless.game-server-dev.svc.cluster.local
+                          port_value: 22222
