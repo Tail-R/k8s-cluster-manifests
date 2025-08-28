@@ -5,7 +5,7 @@ metadata:
   namespace: game-server-dev
 spec:
   serviceName: bullet-hell-server-headless
-  replicas: 3
+  replicas: 100
   selector:
     matchLabels:
       app: bullet-hell-server
