@@ -39,7 +39,7 @@ spec:
         - name: tempfs-volume
           emptyDir:
             medium: Memory
-            sizeLimit: 64Mi
+            sizeLimit: 256Mi
         - name: cephfs-volume
           persistentVolumeClaim:
             claimName: cephfs-pvc      
