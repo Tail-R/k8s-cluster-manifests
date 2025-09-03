@@ -1,0 +1,44 @@
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: lm-sensors-exporter
+  namespace: monitoring
+  labels:
+    app: lm-sensors-exporter
+spec:
+  serviceName: lm-sensors-exporter-headless
+  selector:
+    matchLabels:
+      app: lm-sensors-exporter
+  template:
+    metadata:
+      labels:
+        app: lm-sensors-exporter
+    spec:
+      securityContext:
+        runAsUser: 1000
+        runAsGroup: 1000
+        fsGroup: 1000
+      hostPID: true
+      tolerations:
+        - operator: "Exists"
+      containers:
+        - name: lm-sensors-exporter
+          image: tailr/lm-sensors-exporter:latest
+          ports:
+            - containerPort: 9100
+              name: metrics
+          volumeMounts:
+            - name: sysfs
+              mountPath: /sys
+              readOnly: true
+            - name: dev
+              mountPath: /dev
+              readOnly: true
+      volumes:
+        - name: sysfs
+          hostPath:
+            path: /sys
+        - name: dev
+          hostPath:
+            path: /dev

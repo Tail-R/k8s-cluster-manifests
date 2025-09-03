@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: lm-sensors-exporter-headless
+  namespace: monitoring
+spec:
+  clusterIP: None
+  selector:
+    app: lm-sensors-exporter
+  ports:
+    - name: metrics
+      port: 9100
+      targetPort: 9100

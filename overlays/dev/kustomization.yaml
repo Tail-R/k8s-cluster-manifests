@@ -2,3 +2,4 @@ resources:
   - ../../base
   - ../../apps/bullet-hell-server
   - ../../apps/envoy
+  - ../../apps/lm-sensors-exporter

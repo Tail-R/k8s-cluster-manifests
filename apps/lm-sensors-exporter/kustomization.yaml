@@ -1,0 +1,6 @@
+# To-Do: Implement RBAC
+
+resources:
+  - namespace.yaml
+  - daemonset.yaml
+  - headless.yaml
