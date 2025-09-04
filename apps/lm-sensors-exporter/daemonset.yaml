@@ -6,6 +6,7 @@ metadata:
   labels:
     app: lm-sensors-exporter
 spec:
+  serviceAccountName: node-exporter-sa
   serviceName: lm-sensors-exporter-headless
   selector:
     matchLabels:

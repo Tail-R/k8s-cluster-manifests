@@ -14,7 +14,7 @@ spec:
       labels:
         app: node-exporter
     spec:
-      serviceAccountName: node-exporter
+      serviceAccountName: node-exporter-sa
       hostNetwork: true
       hostPID: true
       tolerations:

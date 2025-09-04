@@ -1,6 +1,7 @@
-# To-Do: Implement RBAC
-
 resources:
   - namespace.yaml
+  - sa.yaml
+  - cluster-role.yaml
+  - cluster-rb.yaml
   - daemonset.yaml
   - headless.yaml
