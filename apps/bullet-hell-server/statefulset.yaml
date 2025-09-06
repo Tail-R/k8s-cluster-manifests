@@ -20,13 +20,13 @@ spec:
           ports:
             - containerPort: 22222
               name: game-port
-          resources:
-            requests:
-              cpu: 64m
-              memory: 64Mi
-            limits:
-              cpu: 128m
-              memory: 128Mi
+          # resources:
+          #   requests:
+          #     cpu: 64m
+          #     memory: 64Mi
+          #   limits:
+          #     cpu: 128m
+          #     memory: 128Mi
           readinessProbe:
             tcpSocket:
               port: 22222
