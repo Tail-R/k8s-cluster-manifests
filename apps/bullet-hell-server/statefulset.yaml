@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: bullet-hell-server
-          image: tailr/bullet-hell-server:latest
+          image: tailr/bullet-hell-server:few-bullets
           ports:
             - containerPort: 22222
               name: game-port
